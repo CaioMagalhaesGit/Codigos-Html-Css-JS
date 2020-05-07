@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculadora de Média</title>
+	<link rel="icon" href="img/icone.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+
+
+</head>
+<body>
+
+
+	<header>
+		<div class="container">
+			<h1 class="titulo">Calcule sua média das notas</h1>
+		</div>
+	</header>
+	<main>
+		<section class="container">
+			<h2>Boletim</h2>
+			<label for="filtratabela">Filtre:</label>
+			<input type="text" name="filtro" id="filtratabela" placeholder="Digite o nome do aluno:">
+
+			<table>
+				<thead>
+					<tr>
+						<th>Nome</th>
+						<th>Matemática</th>
+						<th>Português</th>
+						<th>Ciências</th>
+						<th>Média</th>
+					</tr>
+				</thead>
+				<tbody id="tabela-alunos">
+					<tr class="aluno" id="primeiro-aluno">
+						<td class="info-nome">Carla</td>
+						<td class="info-mat">90</td>
+						<td class="info-por">78</td>
+						<td class="info-cie">67</td>
+						<td class="info-med">0</td>
+					</tr>
+
+					<tr class="aluno" >
+						<td class="info-nome">Pedro</td>
+						<td class="info-mat">80</td>
+						<td class="info-por">74</td>
+						<td class="info-cie">72</td>
+						<td class="info-med">0</td>
+					</tr>
+
+					<tr class="aluno" >
+						<td class="info-nome">Maria</td>
+						<td class="info-mat">54</td>
+						<td class="info-por">69</td>
+						<td class="info-cie">92</td>
+						<td class="info-med">0</td>
+					</tr>
+
+					<tr class="aluno">
+						<td class="info-nome">Caio Magalhaes</td>
+						<td class="info-mat">85</td>
+						<td class="info-por">71</td>
+						<td class="info-cie">69</td>
+						<td class="info-med">0</td>
+					</tr>
+					<tr class="aluno" >
+						<td class="info-nome">Marcos</td>
+						<td class="info-mat">46</td>
+						<td class="info-por">58</td>
+						<td class="info-cie">80</td>
+						<td class="info-med">0</td>
+					</tr>
+				</tbody>
+			</table>
+
+		</section>
+	</main>
+	<section class="container">
+		<h2 id="titulo-form">Adicionar novas notas:</h2>
+		<ul id="mensagens-erro">
+			<li></li>
+		</ul>
+		<form id="form-adiciona">
+			<div class="grupo">
+				<label for="nome">Nome:</label>
+				<input id="nome" name="nome" type="text"
+				placeholder="digite seu nome: " class="campo">
+			</div>
+			<div class="grupo">
+				<label for="mat">Nota de Matemática:</label>
+				<input id="mat" name="mat" type="text"
+				placeholder="digite sua nota:" class="campo campo-medio">
+			</div>
+			<div class="grupo">
+				<label for="por">Nota de Português:</label>
+				<input id="por" name="por" type="text"
+
+				placeholder="digite sua nota:" class="campo campo-
+				medio">
+
+			</div>
+			<div class="grupo">
+				<label for="cie">Nota de Ciências:</label>
+				<input id="cie" name="cie" type="text"
+				placeholder="digite sua nota:"
+				class="campo campo-medio">
+			</div>
+
+
+			<button id="adicionar-aluno" class="botao bto-
+			principal">Adicionar Notas</button>
+		</form>
+	</section>
+
+	<script src="js/calcula-med.js"> </script>
+	<script src="js/form.js"> </script>
+	<script src="js/remover-aluno.js"> </script>
+	<script src="js/filtra.js"> </script>
+
+
+</body>
+</html>
